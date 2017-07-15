@@ -1,0 +1,322 @@
+﻿@font-face {
+  font-family: 'Klavika Bold Bold';
+  src: url('font/Klavika Bold Bold.otf');
+  src: url('font/Klavika Bold Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('font/RobotoBold.ttf');
+  src: url('font/RobotoBold.eot');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Roboto Regular', 'Roboto';
+  src: url('font/RobotoRegular.eot');
+  src: url('font/RobotoRegular.ttf');
+}
+
+@font-face {
+  font-family: 'KlavikaMedium-Plain';
+  src: url('font/Klavika Medium Plain.otf');
+}
+
+@font-face {
+  font-family: 'KlavikaRegular-Plain';
+  src: url('font/Klavika Regular Plain');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.button_white {
+  font-family: Roboto;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  border: 1pt solid white;
+  background-color: transparent;
+  border-radius: 18.53px;
+}
+
+/*header*/
+header {
+  height: 76px;
+  background-color: #34495E;
+  overflow: hidden;
+}
+
+.header_logo {
+  margin-left: 60px;
+  margin-top: 20px;
+  float: left;
+}
+
+.navigation {
+  margin-top: 18px;
+  margin-right: 55px;
+  float: right;
+}
+
+.navigation__submit {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 13.89px;
+  line-height: 16.66px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  border: 1pt solid white;
+  background-color: transparent;
+  border-radius: 18.53px;
+}
+
+.navigation__submit_style1 {
+  width: 188px;
+  margin-right: 26px;
+}
+
+.navigation__submit_style2 {
+  width: 171px;
+  margin-right: 31px;
+}
+
+.navigation__submit_style3,
+.navigation__submit_style4 {
+  border: none;
+  margin-right: 10px;
+}
+
+.navigation__submit_style5 {
+  width: 85px;
+  border: none;
+  background-color: #1489CA;
+  border-radius: 19.22px;
+  margin-left: 26px;
+}
+
+/*1st block*/
+.block1 {
+  clear: both;
+  height: 560px;
+  overflow: hidden;
+  background-color: #E3FEFE;
+  background-image: url('img/glassmanbg.svg');
+  background-repeat: no-repeat;
+}
+/*trabl s shriftami!!!!*/
+h1 {
+  font-family: 'Klavika Bold Bold', Sans-serif;
+  font-weight: bold;
+  font-size: 42.18px;
+  line-height: 50.61px;
+  color: #3C53C8;
+  margin: 56px 0 52px 50px;
+}
+
+.block1__count {
+  font-family: 'KlavikaMedium-Plain', Sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0 0 22px 50px;
+  color: #533465;
+}
+
+.block1__count>span {
+  border: 1px solid #3C53C8;
+  border-radius: 9.87px;
+}
+
+.block1__count+p {
+  font-family: 'KlavikaRegular-Plain', Sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: #533465;
+  margin-left: 50px;
+}
+
+/*animation*/
+.block1__imgMail {
+  width: 25.3px;
+  height: 25.3px;
+  background-image: url('img/mail.svg');
+  background-repeat: no-repeat;
+  position: relative;
+  top: -217px;
+  left: 774px;
+  animation-name: Enlargement;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes Enlargement {
+  0% {}
+  50% {top:-220px; left:760px;transform: scale(2, 2);}
+}
+
+.block1__imgCloud {
+  width: 244px;
+  height: 215px;
+  background-image: url('img/cloudwhithhands.svg');
+  background-repeat: no-repeat;
+  position: relative;
+  top: -390px;
+  left: 970px;
+}
+  
+ /*2 block*/
+ .block2 {
+   height: 771px;
+   background-color: #444E7F;
+   overflow: hidden;
+ }
+ 
+ h2 {
+   font-family: 'Klavika Bold Bold', Sans-serif;
+   font-size: 50px;
+   line-height: 60pz;
+   color: #18B8E2;
+   margin-top: 63.82px;
+   text-align: center;
+ }
+ 
+ .block2__left,
+ .block2__right {
+   width: 605px;
+   height: 580px;
+ }
+ 
+ .block2__left {
+   float: left;
+   background-image: url('img/agencyHouse.svg');
+   background-repeat: no-repeat;
+   background-size: 364.25px 388.23px;
+   background-position: 50% 20%;
+   -webkit-box-shadow: 181px -95px 0px -180.5px white;
+   position: relative;
+ }
+ 
+ .block2__right {
+   float: right;
+   background-image: url('img/threeLancers.svg');
+   background-repeat: no-repeat;
+   background-size: 394.57px 330.36px;
+   background-position: 38% 30%;
+   position: relative;
+ }
+ 
+ .block2__left__button {
+   width: 228.1px;
+   font-size: 17.57px;
+   line-height: 21.08px;
+   position: absolute;
+   top: 462px;
+   left: 30%;
+ }
+ 
+ .block2__right__button{
+   font-size: 17.57px;
+   line-height: 21.08px;
+   width: 228.1px;
+   position: absolute;
+   top: 462px;
+   left: 27%
+ }
+ 
+ /*3 block*/
+ .block3 {
+   clear: both;
+   overflow: hidden;
+   height: 631.53px;
+   background-color: #8D4B9C;
+ }
+ 
+ .block3>h2 {
+   color: white;
+   margin-top: 66.54px;
+   margin-bottom: 59px;
+ }
+ 
+ .block3__instruction {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+ }
+ 
+ .block3__instruction>li {
+   display: block;
+   margin-right: 30px;
+ }
+ 
+ .block3__instruction>li:last-child {
+   margin-right: 0;
+ }
+ 
+ .block3__instruction>li>p {
+   color: white;
+   font-family: Roboto;
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 24px;
+ }
+ 
+ .block3__instruction>li>p:first-child{
+   text-align: center;
+ }
+ 
+ .block3__instruction>li>p:last-child {
+   font-family: 'Roboto';
+   font-weight: normal;
+   font-size: 17px;
+   line-height: 20.4px;
+ }
+ 
+ .block3__instruction>li>div {
+   width: 162.95px;
+   height: 163.01px;
+   border-radius: 100px;
+   background-color: #723780;
+   margin: 34px auto 17.5px;
+ }
+ 
+ .block3__instruction__img1 {
+   background-image: url('img/photo.svg');
+   background-repeat: no-repeat;
+   background-size: 104.5px 111.5px;
+   background-position: 50% 40%;
+ }
+ 
+ .block3__instruction__img2 {
+   background-image: url('img/brainPhoto.svg');
+   background-repeat: no-repeat;
+   background-size: 137px 104.9px;
+   background-position: 50% 50%;
+ }
+ 
+ .block3__instruction__img3 {
+   background-image: url('img/puzlePhoto.svg');
+   background-repeat: no-repeat;
+   background-size: 126.41px 126.41px;
+   background-position: 50% 50%;
+ }
+ 
+ /*чето какая то херня с картинкой*/
+ .block3__instruction__img4 {
+   background-image: url('img/resumePhoto.svg');
+   background-repeat: no-repeat;
+   background-size: 150px 190px;
+   background-position: 50% 50%;
+ }
+ 
+ .block3__instruction__img5 {
+   background-image: url('img/handsPhoto.svg');
+   background-repeat: no-repeat;
+   background-size: 149.44px 102.89px;
+   background-position: 50% 50%;
+ }
