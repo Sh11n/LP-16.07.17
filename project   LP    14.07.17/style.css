@@ -28,6 +28,11 @@
   src: url('font/Klavika Regular Plain');
 }
 
+@font-face {
+  font-family: 'Klavika Light Plain';
+  src: url('font/Klavika Light Plain.otf');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -45,13 +50,13 @@
 }
 
 /*header*/
-header {
+.mainheader {
   height: 76px;
   background-color: #34495E;
   overflow: hidden;
 }
 
-.header_logo {
+.mainheader_logo {
   margin-left: 60px;
   margin-top: 20px;
   float: left;
@@ -133,7 +138,7 @@ h1 {
 }
 
 .block1__count+p {
-  font-family: 'KlavikaRegular-Plain', Sans-serif;
+  font-family: 'Klavika Regular Plain', Sans-serif;
   font-size: 30px;
   line-height: 36px;
   color: #533465;
@@ -180,7 +185,7 @@ h1 {
  h2 {
    font-family: 'Klavika Bold Bold', Sans-serif;
    font-size: 50px;
-   line-height: 60pz;
+   line-height: 60px;
    color: #18B8E2;
    margin-top: 63.82px;
    text-align: center;
@@ -319,4 +324,66 @@ h1 {
    background-repeat: no-repeat;
    background-size: 149.44px 102.89px;
    background-position: 50% 50%;
+ }
+ 
+ /*new block*/
+ .blockSpecialization {
+   height: 844.5px;
+   background-color: #B6E1E3;
+   overflow: hidden;
+ }
+ 
+ .blockSpecialization>h2 {
+   margin-top: 60.35px;
+   margin-bottom: 12px;
+   color: #0A4064;
+ }
+ 
+ .blockSpecialization>h3 {
+   font-family: 'Klavika Regular Plain';
+   font-size: 25px;
+   line-height: 30px;
+   color: #0A4064;
+   text-align: center;
+   margin-bottom: 13px;
+ }
+ 
+ .blockSpecialization__desk {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+ }
+ 
+ .blockSpecialization__desk__column:nth-child(2) {
+   margin: 0 38.853px 0;
+ }
+ 
+ .blockSpecialization__desk__column>div {
+   height: 28.464px;
+   width: 11.584px;
+   margin: 0 auto;
+   background-image: url('img/forlist.svg');
+   background-repeat: no-repeat;
+ }
+ 
+ .blockSpecialization__desk__column__list {
+   width: 360.19px;
+   height: 526.537px;
+   background-color: white;
+   border-radius: 9.47px;
+   padding-top: 52.031px;
+   list-style-type: none;
+   box-sizing: border-box;
+ }
+ 
+ .blockSpecialization__desk__column__list>li {
+   padding-left: 27.652px;
+   font-family: 'Klavika Light Plain';
+   font-size: 22.56px;
+   line-height: 33.85px;
+   color: #0A4064;
+ }
+ 
+ .blockSpecialization__desk__column__list>li:nth-child(odd) {
+   background-color: #E8F5F6;
  }
