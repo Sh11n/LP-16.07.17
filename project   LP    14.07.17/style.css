@@ -33,6 +33,12 @@
   src: url('font/Klavika Light Plain.otf');
 }
 
+@font-face {
+  font-family: 'Klavika Med Caps SCTF';
+  src: url('font/Klavika Med Caps SCTF.otf');
+  font-weight: bold;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -386,4 +392,270 @@ h1 {
  
  .blockSpecialization__desk__column__list>li:nth-child(odd) {
    background-color: #E8F5F6;
+ }
+ 
+ /*block Searh*/
+ .block__search {
+   height: 1335px;
+   background-color: #007090;
+   padding-top: 58.8px;
+ }
+ 
+ .block__search>h2 {
+   color: white;
+   margin: 0;
+ }
+ 
+ .block__search__form {
+   margin: 46px auto 0px;
+   width: 1152px;
+   height: 112px;
+ }
+ 
+ .block__search__form>button {
+   font-family: 'Klavika Regular Plain';
+   font-size: 15px;
+   line-height: 18px;
+   font-weight: normal;
+   padding: 3.5px;
+   border: 2px solid white;
+   width: 128.447px;
+   height: 43px;
+   margin: 0px 0 20px 13.5px;
+   box-sizing: border-box;
+   border-radius: 21.41px;
+   float: left;
+ }
+ 
+ .block__search__form>button:nth-child(1),
+ .block__search__form>button:nth-child(2) {
+   font-family: 'klavika Bold Bold';
+ }
+ 
+ .block__search__form>button:nth-child(10),
+ .block__search__form>button:nth-child(11),
+ .block__search__form>button:nth-child(12),
+ .block__search__form>button:nth-child(13),
+ .block__search__form>button:nth-child(14),
+ .block__search__form>button:nth-child(15),
+ .block__search__form>button:nth-child(16) {
+   font-family: 'KlavikaMedium-Plain';
+ }
+ 
+ .block__search__form>button:focus {
+   background-color: white;
+   color: #0A4064;
+ }
+ 
+ .search__button_active {
+   background-color: white;
+   color: #0A4064;
+ }
+ 
+ .block__viewResult {
+   clear: both;
+   margin-top: 55px;
+ }
+ 
+ .block__result {
+   width: 1161.43px;
+   margin: 0 auto;
+   margin-bottom: 50px;
+ }
+ 
+ .block__result>ul {
+   height: 60.64px;
+   display: flex;
+   flex-direction: row;
+   list-style-type: none;
+   background-color: #0A4064;
+ }
+ 
+ /*шрифт не подходит надо гдет найти тоньш*/
+ .block__result__accPlaner {
+   font-family: 'Klavika Med Caps SCTF';
+   font-size: 30px;
+   line-height: 36px;
+   color: #18C1E3;
+   padding-left: 34px;
+   margin: auto 0;
+ }
+ 
+ .block__result__date,
+ .block__result__link,
+ .block__result__link>a,
+ .block__result__experience {
+   font-family: 'KlavikaRegular-Plain';
+   font-size: 20px;
+   line-height: 24px;
+   color: #18C1E3;
+   margin: auto 0;
+ }
+ 
+ .block__result__experience { 
+   margin: auto 119px auto 201px;
+ }
+ 
+ .block__result__date {
+   margin-right: 105.17px;
+   position: relative;
+ }
+ 
+ .block__result__date_img {
+   width: 28px;
+   height: 28px;
+   background-image: url('img/date.svg');
+   background-repeat: no-repeat;
+   position: absolute;
+   left: -39px;
+   top: -3px;
+ }
+ 
+ .block__result__link {
+   position: relative;
+ }
+ 
+ .block__result__link_img {
+   width: 23.17px;
+   height: 23.17px;
+   background-image: url('img/linkimg.svg');
+   background-repeat: no-repeat;
+   position: absolute;
+   left: -30.17px;
+   bottom: -1px;
+ }
+ 
+ .block__result__link>a {
+   text-decoration: none;
+ }
+ 
+ .block__result>header {
+   min-height: 124.35px;
+   background-color: #388DCB;
+ }
+ 
+ .block__result>header>h3 {
+   font-family: 'Klavika Regular Plain';
+   font-size: 30px;
+   line-height: 36px;
+   color: white;
+   padding: 20px 34px 20px 34px;
+ }
+ 
+ .nameCompany {
+   color: #0A4064;
+   background-color: #F7C9C9;
+   font-family: 'Klavika Med Caps SCTF';
+ }
+ 
+ .nameSpecialization {
+   color: #18C1E3;
+ }
+ 
+ .block__result>footer {
+   height: 81.71px;
+   background-color: white;
+   position: relative;
+ }
+ 
+ .block__result>footer>p {
+   display: inline-block;
+   font-family: 'Klavika Light Plain';
+   font-size: 25px;
+   line-height: 30px;
+   margin: 32px 35px 0;
+   color: #0A4064;
+ }
+ 
+ .userSkill {
+   color: #388DCB;
+ }
+ 
+ .block__result>footer>button {
+   position: absolute;
+   color: #18C1E3;
+   font-family: 'Klavika Bold Bold';
+   font-size: 32.13px;
+   line-height: 38.55px;
+   background-color: #0A4064;
+   width: 213.43px;
+   height: 63.35px;
+   border-radius: 12px;
+   vertical-align: middle;
+   right: 31px;
+   top: 7px;
+   box-shadow: none;
+ }
+ 
+ .block__LoadMore {
+   width: 134px;
+   margin: 20px auto 0;
+ }
+ 
+ .LoadMore {
+   font-family: 'Klavika Bold Bold';
+   font-size: 30px;
+   line-height: 36px;
+   color: white;
+   text-align: center;
+   text-decoration: none;
+ }
+ 
+ .aFoot {
+   height: 133px;
+   background-color: #2E4054;
+ }
+ 
+ .aFoot>span {
+   margin-top: 20.05px;
+   margin-left: 66.3px;
+   display: inline-block;
+ }
+ 
+ .social {
+   display: inline-block;
+   width: 32.46px;
+   height: 32.46px;
+ }
+ 
+ .aFoot_fb {
+   background-image: url('img/fb.svg');
+   background-repeat: np-repeat:
+ }
+ 
+ .aFoot_tw {
+   background-image: url('img/tw.svg');
+   background-repeat: np-repeat;
+   margin: 0 16.28px 0;
+ }
+ 
+ .aFoot_yt {
+   background-image: url('img/YT.svg');
+   background-repeat: np-repeat;
+   margin-right: 52.53px;
+ }
+ 
+ .aFoot__link {
+   font-family: 'Roboto';
+   font-weight: bold;
+   font-size: 19.67px;
+   line-height: 23.61px;
+   text-decoration: none;
+   color: white;
+ }
+ 
+ .aFoot>span>a:nth-child(5) {
+   margin: 0 90px 0;
+ }
+ 
+ .aFoot>span>a:nth-child(7) {
+   margin: 0 80px 0;
+ }
+ 
+ .aFoot>div {
+   height: 61.41px;
+   width: 126.68px;
+   background-image: url('img/footerLogo.svg');
+   background-repeat: no-repeat;
+   margin: 15.65px auto 0;
  }
