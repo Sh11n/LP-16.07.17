@@ -127,8 +127,8 @@
 /*1st block*/
 .block1 {
   clear: both;
-  height: 560px;
-  overflow: hidden;
+  min-height: 560px;
+  padding-top: 56px;
   background-color: #E3FEFE;
   background-image: url('img/glassmanbg.svg');
   background-repeat: no-repeat;
@@ -140,7 +140,7 @@ h1 {
   font-size: 42.18px;
   line-height: 50.61px;
   color: #3C53C8;
-  margin: 56px 0 52px 50px;
+  margin: 0 0 52px 50px;
 }
 
 .block1__count {
@@ -212,7 +212,7 @@ h1 {
   
  /*2 block*/
  .block2 {
-   height: 771px;
+   min-height: 771px;
    background-color: #444E7F;
    padding-top: 63.82px;
    position: relative;
@@ -231,10 +231,12 @@ h1 {
  .block2__right {
    width: 610px;
    height: 580px;
+   display: inline-block;
+   margin-left: 10px;
  }
  
  .block2__left {
-   float: left;
+  
    background-image: url('img/agencyHouse.svg');
    background-repeat: no-repeat;
    background-size: 364.25px 388.23px;
@@ -246,7 +248,7 @@ h1 {
  }
  
  .block2__right {
-   float: right;
+   
    background-image: url('img/threeLancers.svg');
    background-repeat: no-repeat;
    background-size: 394.57px 330.36px;
