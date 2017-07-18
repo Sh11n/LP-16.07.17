@@ -10,3 +10,7 @@ I like to write on html and CSS and I would like to find work in this direction 
 My 1st test:
 Landing Page
 тестовое задание
+
+
+<br><hr>
+my email barada4@mail.ru
