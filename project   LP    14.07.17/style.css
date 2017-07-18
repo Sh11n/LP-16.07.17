@@ -55,6 +55,19 @@
   border-radius: 18.53px;
 }
 
+.corner {
+  position: absolute;
+  left: 610px;
+  bottom: -13px;
+  z-index: 1000;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
 /*header*/
 .mainheader {
   height: 76px;
@@ -161,14 +174,30 @@ h1 {
   top: -217px;
   left: 774px;
   animation-name: Enlargement;
+  -moz-animation-name: Enlargement;
+  -o-animation-name: Enlargement;
+  -webkit-animation-name: Enlargement;
   animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
   animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
 }
 
 
-@keyframes Enlargement {
+@keyframes Enlargement{
   0% {}
-  50% {top:-220px; left:760px;transform: scale(2, 2);}
+  50% {
+        top:-220px;
+        left:760px;
+        transform: scale(2, 2);
+        -webkit-transform: scale(2, 2);
+        -o-transform: scale(2, 2); 
+        -moz-transform: scale(2, 2);
+      }
 }
 
 .block1__imgCloud {
@@ -185,21 +214,22 @@ h1 {
  .block2 {
    height: 771px;
    background-color: #444E7F;
-   overflow: hidden;
+   padding-top: 63.82px;
+   position: relative;
  }
  
  h2 {
    font-family: 'Klavika Bold Bold', Sans-serif;
+   font-weight: bold;
    font-size: 50px;
    line-height: 60px;
    color: #18B8E2;
-   margin-top: 63.82px;
    text-align: center;
  }
  
  .block2__left,
  .block2__right {
-   width: 605px;
+   width: 610px;
    height: 580px;
  }
  
@@ -210,6 +240,8 @@ h1 {
    background-size: 364.25px 388.23px;
    background-position: 50% 20%;
    -webkit-box-shadow: 181px -95px 0px -180.5px white;
+   -moz-box-shadow: 181px -95px 0px -180.5px white;
+   box-shadow: 181px -95px 0px -180.5px white;
    position: relative;
  }
  
@@ -240,17 +272,21 @@ h1 {
    left: 27%
  }
  
+ .block2__corner_color {
+  background-color: #444E7F;
+ }
+ 
  /*3 block*/
  .block3 {
    clear: both;
-   overflow: hidden;
+   position: relative;
+   padding-top: 66.54px;
    height: 631.53px;
    background-color: #8D4B9C;
  }
  
  .block3>h2 {
    color: white;
-   margin-top: 66.54px;
    margin-bottom: 59px;
  }
  
@@ -332,7 +368,11 @@ h1 {
    background-position: 50% 50%;
  }
  
- /*new block*/
+ .block3__corner_color {
+   background-color: #8D4B9C;
+ }
+ 
+ /*new block project help*/
  .blockSpecialization {
    height: 844.5px;
    background-color: #B6E1E3;
@@ -346,7 +386,7 @@ h1 {
  }
  
  .blockSpecialization>h3 {
-   font-family: 'Klavika Regular Plain';
+   font-family: 'Klavika Regular Plain', Sans-serif;
    font-size: 25px;
    line-height: 30px;
    color: #0A4064;
@@ -413,7 +453,7 @@ h1 {
  }
  
  .block__search__form>button {
-   font-family: 'Klavika Regular Plain';
+   font-family: 'Klavika Regular Plain', Sans-serif;
    font-size: 15px;
    line-height: 18px;
    font-weight: normal;
@@ -430,6 +470,7 @@ h1 {
  .block__search__form>button:nth-child(1),
  .block__search__form>button:nth-child(2) {
    font-family: 'klavika Bold Bold';
+   font-weight: bold;
  }
  
  .block__search__form>button:nth-child(10),
@@ -442,7 +483,7 @@ h1 {
    font-family: 'KlavikaMedium-Plain';
  }
  
- .block__search__form>button:focus {
+ .block__search__form>button:active {
    background-color: white;
    color: #0A4064;
  }
@@ -467,33 +508,33 @@ h1 {
    height: 60.64px;
    display: flex;
    flex-direction: row;
+   align-items: center;
    list-style-type: none;
    background-color: #0A4064;
  }
  
  /*шрифт не подходит надо гдет найти тоньш*/
  .block__result__accPlaner {
+   display: block;
    font-family: 'Klavika Med Caps SCTF';
    font-size: 30px;
    line-height: 36px;
    color: #18C1E3;
    padding-left: 34px;
-   margin: auto 0;
  }
  
  .block__result__date,
  .block__result__link,
  .block__result__link>a,
  .block__result__experience {
-   font-family: 'KlavikaRegular-Plain';
+   font-family: 'KlavikaRegular-Plain', Sans-serif;
    font-size: 20px;
    line-height: 24px;
    color: #18C1E3;
-   margin: auto 0;
  }
  
  .block__result__experience { 
-   margin: auto 119px auto 201px;
+   margin: 0 119px 0 201px;
  }
  
  .block__result__date {
@@ -535,7 +576,7 @@ h1 {
  }
  
  .block__result>header>h3 {
-   font-family: 'Klavika Regular Plain';
+   font-family: 'Klavika Regular Plain', Sans-serif;
    font-size: 30px;
    line-height: 36px;
    color: white;
@@ -575,6 +616,7 @@ h1 {
    position: absolute;
    color: #18C1E3;
    font-family: 'Klavika Bold Bold';
+   font-weight: bold;
    font-size: 32.13px;
    line-height: 38.55px;
    background-color: #0A4064;
@@ -594,15 +636,17 @@ h1 {
  
  .LoadMore {
    font-family: 'Klavika Bold Bold';
-   font-size: 30px;
+   font-weight: bold;
+   font-size: 27px;
    line-height: 36px;
    color: white;
    text-align: center;
    text-decoration: none;
  }
  
+ /*Footer*/
  .aFoot {
-   height: 133px;
+   min-height: 133px;
    background-color: #2E4054;
  }
  
@@ -614,24 +658,24 @@ h1 {
  
  .social {
    display: inline-block;
-   width: 32.46px;
-   height: 32.46px;
+   width: 32px;
+   height: 32px;
  }
  
  .aFoot_fb {
    background-image: url('img/fb.svg');
-   background-repeat: np-repeat:
+   background-repeat: no-repeat:
  }
  
  .aFoot_tw {
    background-image: url('img/tw.svg');
-   background-repeat: np-repeat;
+   background-repeat: no-repeat;
    margin: 0 16.28px 0;
  }
  
  .aFoot_yt {
    background-image: url('img/YT.svg');
-   background-repeat: np-repeat;
+   background-repeat: no-repeat;
    margin-right: 52.53px;
  }
  
@@ -645,11 +689,11 @@ h1 {
  }
  
  .aFoot>span>a:nth-child(5) {
-   margin: 0 90px 0;
+   margin: 0 70px 0;
  }
  
  .aFoot>span>a:nth-child(7) {
-   margin: 0 80px 0;
+   margin: 0 70px 0;
  }
  
  .aFoot>div {
