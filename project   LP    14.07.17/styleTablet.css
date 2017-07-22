@@ -149,6 +149,7 @@ body  {
   height: auto;
   padding-top: 56px;
   background-color: #E3FEFE;
+   text-align: center;
 }
 
 .block1__contentLeft {
@@ -158,6 +159,7 @@ body  {
   padding-left: 50px;
   vertical-align: top;
   margin: 0 auto;
+  text-align: left;
 }
 
 /*trabl s shriftami!!!!*/
@@ -283,6 +285,7 @@ body  {
  .block2__wrapImg {
    width: 100%;
    height: auto;
+   text-align: center;
  }
  
  .block2__left,
@@ -308,26 +311,24 @@ body  {
    background-image: url('img/threeLancers.svg');
    background-repeat: no-repeat;
    background-size: 394.57px 330.36px;
-   background-position: 38% 30%;
+   background-position: 60% 30%;
    position: relative;
  }
  
  .block2__left__button {
-   width: 228.1px;
-   font-size: 1.098125em;
-   line-height: 1.3175em;
+   width: 200px;
+   font-size: 1em;
    position: absolute;
    top: 462px;
    left: 30%;
  }
  
  .block2__right__button{
-   font-size: 1.098125em;
-   line-height: 1.3175em;
-   width: 228.1px;
+   font-size: 1em;
+   width: 200px;
    position: absolute;
    top: 462px;
-   left: 27%
+   left: 32%
  }
  
  .block2__corner_color {
@@ -336,10 +337,9 @@ body  {
  
  /*3 block*/
  .block3 {
-   clear: both;
+   height: auto;
    position: relative;
    padding-top: 66.54px;
-   height: 631.53px;
    background-color: #8D4B9C;
  }
  
@@ -349,14 +349,15 @@ body  {
  }
  
  .block3__instruction {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
+   text-align: center;
+   padding-bottom: 20px;
  }
  
  .block3__instruction>li {
-   display: block;
-   margin-right: 30px;
+   display: inline-block;
+   vertical-align: top;
+   margin-right: 15px;
+   margin-left: 15px;
  }
  
  .block3__instruction>li:last-child {
@@ -432,9 +433,9 @@ body  {
  
  /*new block project help*/
  .blockSpecialization {
-   min-height: 844.5px;
+   height: auto;
    background-color: #B6E1E3;
-   padding-top: 60.35px;
+   padding: 60.35px 0 50px;
  }
  
  .blockSpecialization>h2 {
@@ -444,20 +445,22 @@ body  {
  
  .blockSpecialization>h3 {
    font-family: 'Klavika Regular Plain', Sans-serif;
-   font-size: 1.5625em;
+   font-size: 1.5em;
    color: #0A4064;
    text-align: center;
    margin-bottom: 13px;
  }
  
  .blockSpecialization__desk {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
+   height: auto;
+   text-align: center;
  }
  
- .blockSpecialization__desk__column:nth-child(2) {
-   margin: 0 38.853px 0;
+ .blockSpecialization__desk__column {
+   height: auto;
+   display: inline-block;
+   margin: 10px auto;
+   vertical-align: top;
  }
  
  .blockSpecialization__desk__column>div {
@@ -469,11 +472,12 @@ body  {
  }
  
  .blockSpecialization__desk__column__list {
-   width: 360.19px;
-   height: 526.537px;
+   width: 330px;
+   height: auto;
    background-color: white;
    border-radius: 9.47px;
    padding-top: 52.031px;
+   padding-bottom: 25px;
    list-style-type: none;
    box-sizing: border-box;
  }
@@ -484,6 +488,7 @@ body  {
    font-size: 1.41em;
    line-height: 2.115625em;
    color: #0A4064;
+   text-align: left;
  }
  
  .blockSpecialization__desk__column__list>li:nth-child(odd) {
@@ -492,20 +497,20 @@ body  {
  
  /*block Searh*/
  .block__search {
-   height: 1335px;
+   height: auto;
    background-color: #007090;
    padding-top: 58.8px;
  }
  
  .block__search>h2 {
    color: white;
-   margin: 0;
  }
  
  .block__search__form {
    margin: 46px auto 0px;
-   width: 1152px;
-   height: 112px;
+   height: auto;
+   text-align: center;
+   vertical-align: top;
  }
  
  .block__search__form>button {
@@ -517,10 +522,14 @@ body  {
    border: 2px solid white;
    width: 128.447px;
    height: 43px;
-   margin: 0px 0 20px 13.5px;
+   margin: 10px 10px;
    box-sizing: border-box;
    border-radius: 21.41px;
-   float: left;
+   display: inline-block;
+ }
+ 
+ .block__search__form>button:nth-child(1) {
+   vertical-align: bottom;
  }
  
  .block__search__form>button:nth-child(1),
@@ -551,32 +560,35 @@ body  {
  
  .block__viewResult {
    clear: both;
+   height: auto;
    margin-top: 55px;
  }
  
  .block__result {
-   width: 1161.43px;
+   width: 90%;
+   height: auto;
    margin: 0 auto;
    margin-bottom: 50px;
  }
  
  .block__result>ul {
-   height: 60.64px;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
+   height: auto;
    list-style-type: none;
    background-color: #0A4064;
+   padding-bottom: 5px;
+   padding-left: 34px;
  }
  
- /*шрифт не подходит надо гдет найти тоньш*/
+ .block__result>ul >li {
+   display: inline-block;
+ }
+ 
  .block__result__accPlaner {
-   display: block;
    font-family: 'Klavika Med Caps SCTF';
    font-size: 1.875em;
-   line-height: 2.25em;
+   line-height: 2em;
    color: #18C1E3;
-   padding-left: 34px;
+   margin-right: 5%;
  }
  
  .block__result__date,
@@ -585,16 +597,17 @@ body  {
  .block__result__experience {
    font-family: 'KlavikaRegular-Plain', Sans-serif;
    font-size: 1.25em;
-   line-height: 1.5em;
+   line-height: 1.2em;
    color: #18C1E3;
  }
  
  .block__result__experience { 
-   margin: 0 119px 0 201px;
+   margin-right: 7%;
  }
  
  .block__result__date {
-   margin-right: 105.17px;
+   margin-right: 6%;
+   padding-left: 35px;
    position: relative;
  }
  
@@ -604,22 +617,23 @@ body  {
    background-image: url('img/date.svg');
    background-repeat: no-repeat;
    position: absolute;
-   left: -39px;
+   left: 0px;
    top: -3px;
  }
  
  .block__result__link {
    position: relative;
+   padding-left: 30px;
  }
  
  .block__result__link_img {
-   width: 23.17px;
-   height: 23.17px;
+   width: 24px;
+   height: 24px;
    background-image: url('img/linkimg.svg');
    background-repeat: no-repeat;
    position: absolute;
-   left: -30.17px;
-   bottom: -1px;
+   left: 0px;
+   bottom: 3px;
  }
  
  .block__result__link>a {
@@ -627,14 +641,13 @@ body  {
  }
  
  .block__result>header {
-   min-height: 124.35px;
+   height: auto;
    background-color: #388DCB;
  }
  
  .block__result>header>h3 {
    font-family: 'Klavika Regular Plain', Sans-serif;
    font-size: 1.875em;
-   line-height: 2.25em;
    color: white;
    padding: 20px 34px 20px 34px;
  }
@@ -650,18 +663,19 @@ body  {
  }
  
  .block__result>footer {
-   height: 81.71px;
+   height: auto;
    background-color: white;
-   position: relative;
+   padding-bottom: 70px;
+   padding-right: 10px;
+   padding-left: 34px;
+   padding-top: 32px;
  }
  
  .block__result>footer>p {
-   display: inline-block;
    font-family: 'Klavika Light Plain';
    font-size: 1.5625em;
-   line-height: 1.875em;
-   margin: 32px 35px 0;
    color: #0A4064;
+   padding-bottom: 10px;
  }
  
  .userSkill {
@@ -669,23 +683,20 @@ body  {
  }
  
  .block__result>footer>button {
-   position: absolute;
    color: #18C1E3;
    font-family: 'Klavika Bold Bold';
    font-weight: bold;
    font-size: 2.008125em;
-   line-height: 2.409375em;
    background-color: #0A4064;
-   width: 213.43px;
-   height: 63.35px;
+   width: 210px;
+   height: 62px;
    border-radius: 12px;
-   vertical-align: middle;
-   right: 31px;
-   top: 7px;
    box-shadow: none;
+   float: right;
  }
  
  .block__LoadMore {
+   clear: both;
    width: 134px;
    margin: 20px auto 0;
  }
@@ -703,14 +714,15 @@ body  {
  /*Footer*/
  .aFoot {
    padding-top: 20.05px;
-   min-height: 133px;
+   height: auto;
    background-color: #2E4054;
  }
  
  .aFoot>span {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
+   display: block;
+   width: 90%;
+   height: auto;
+   margin: auto;
  }
  
  .social {
@@ -736,21 +748,32 @@ body  {
    margin-right: 52.53px;
  }
  
+  @media only screen and (min-device-width:500px)and(max-device-width:700px) {
+  .aFoot>span>a:nth-child(4),
+  .aFoot>span>a:nth-child(5),
+  .aFoot>span>a:nth-child(6),
+  .aFoot>span>a:nth-child(7),
+  .aFoot>span>a:nth-child(8) {
+    display: block;
+  }
+ }
+ 
  .aFoot__link {
+   display: inline-block;
    font-family: 'Roboto';
    font-weight: bold;
-   font-size: 1.229375em;
-   line-height: 1.475625em;
+   font-size: 1em;
    text-decoration: none;
    color: white;
  }
  
- .aFoot>span>a:nth-child(5) {
-   margin: 0 70px 0;
- }
- 
- .aFoot>span>a:nth-child(7) {
-   margin: 0 70px 0;
+.aFoot>span>a:nth-child(4),
+.aFoot>span>a:nth-child(5),
+.aFoot>span>a:nth-child(6),
+.aFoot>span>a:nth-child(7),
+.aFoot>span>a:nth-child(8) {
+   margin-right: 3%;
+   margin-top: 3%;
  }
  
  .aFoot>div {
