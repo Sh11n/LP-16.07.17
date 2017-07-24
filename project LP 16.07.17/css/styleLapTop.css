@@ -1,42 +1,42 @@
 ﻿
 @font-face {
   font-family: 'Klavika Bold Bold';
-  src: url('font/Klavika Bold Bold.otf');
-  src: url('font/Klavika Bold Bold.ttf');
+  src: url('../fonts/Klavika Bold Bold.otf');
+  src: url('../fonts/Klavika Bold Bold.ttf');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Roboto Bold';
-  src: url('font/RobotoBold.ttf');
-  src: url('font/RobotoBold.eot');
+  src: url('../fonts/RobotoBold.ttf');
+  src: url('../fonts/RobotoBold.eot');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Roboto Regular', 'Roboto';
-  src: url('font/RobotoRegular.eot');
-  src: url('font/RobotoRegular.ttf');
+  src: url('../fonts/RobotoRegular.eot');
+  src: url('../fonts/RobotoRegular.ttf');
 }
 
 @font-face {
   font-family: 'KlavikaMedium-Plain';
-  src: url('font/Klavika Medium Plain.otf');
+  src: url('../fonts/Klavika Medium Plain.otf');
 }
 
 @font-face {
   font-family: 'KlavikaRegular-Plain';
-  src: url('font/Klavika Regular Plain');
+  src: url('../fonts/Klavika Regular Plain.otf');
 }
 
 @font-face {
   font-family: 'Klavika Light Plain';
-  src: url('font/Klavika Light Plain.otf');
+  src: url('../fonts/Klavika Light Plain.otf');
 }
 
 @font-face {
   font-family: 'Klavika Med Caps SCTF';
-  src: url('font/Klavika Med Caps SCTF.otf');
+  src: url('../fonts/Klavika Med Caps SCTF.otf');
   font-weight: bold;
 }
 
@@ -92,10 +92,12 @@ body  {
 }
 
 .navigation {
+  width: 100%;
   height: auto;
 }
 
 .navigation__menuImage {
+  width: 100%;
   display: block;
 }
 
@@ -105,12 +107,11 @@ body  {
 
 .test {
   width: 100%;
-  display: flex;
-  flex-direction: row;
+  display: block;
 }
 
 .navigation__submit {
-  display: block;
+  display: inline-block;
   font-family: Roboto;
   font-weight: bold;
   font-size: 0.86em, 80%;
@@ -133,13 +134,13 @@ body  {
 
 .navigation__submit_style2 {
   width: 171px;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .navigation__submit_style3,
 .navigation__submit_style4 {
   border: none;
-  margin-left: 5%;
+  margin-left: 3%;
 }
 
 .navigation__submit_style5 {
@@ -147,6 +148,7 @@ body  {
   border: none;
   border-radius: 19.22px;
   background-color: #1489CA;
+  margin-left: 5%;
 }
 
 
@@ -212,7 +214,7 @@ body  {
   width: 60%;
   height: 60%;
   position: relative;
-  background-image: url('img/glassman.svg');
+  background-image: url('../img/glassman.svg');
   background-repeat: no-repeat;
   margin-top: 81.40px;
 }
@@ -221,7 +223,7 @@ body  {
 .block1__imgMail {
   width: 25.3px;
   height: 25.3px;
-  background-image: url('img/mail.svg');
+  background-image: url('../img/mail.svg');
   background-repeat: no-repeat;
   position: absolute;
   top: 90px;
@@ -256,7 +258,7 @@ body  {
 .block1__imgCloud {
   width: 40%;
   height: 40%;
-  background-image: url('img/cloudwhithhands.svg');
+  background-image: url('../img/cloudwhithhands.svg');
   background-repeat: no-repeat;
   position: absolute;
   top: 50px;
@@ -266,7 +268,7 @@ body  {
 .block1__imgDeskNRope {
   width: 80%;
   height: 25%;
-  background-image: url('img/deskAndRope.svg');
+  background-image: url('../img/deskAndRope.svg');
   background-repeat: no-repeat;
   position: absolute;
   top: -20px;
@@ -304,7 +306,7 @@ body  {
  }
  
  .block2__left {
-   background-image: url('img/agencyHouse.svg');
+   background-image: url('../img/agencyHouse.svg');
    background-repeat: no-repeat;
    background-size: 364.25px 388.23px;
    background-position: 50% 20%;
@@ -315,7 +317,7 @@ body  {
  }
  
  .block2__right {
-   background-image: url('img/threeLancers.svg');
+   background-image: url('../img/threeLancers.svg');
    background-repeat: no-repeat;
    background-size: 394.57px 330.36px;
    background-position: 60% 30%;
@@ -399,21 +401,21 @@ body  {
  }
  
  .block3__instruction__img1 {
-   background-image: url('img/photo.svg');
+   background-image: url('../img/photo.svg');
    background-repeat: no-repeat;
    background-size: 104.5px 111.5px;
    background-position: 50% 40%;
  }
  
  .block3__instruction__img2 {
-   background-image: url('img/brainPhoto.svg');
+   background-image: url('../img/brainPhoto.svg');
    background-repeat: no-repeat;
    background-size: 137px 104.9px;
    background-position: 50% 50%;
  }
  
  .block3__instruction__img3 {
-   background-image: url('img/puzlePhoto.svg');
+   background-image: url('../img/puzlePhoto.svg');
    background-repeat: no-repeat;
    background-size: 126.41px 126.41px;
    background-position: 50% 50%;
@@ -421,14 +423,14 @@ body  {
  
  /*чето какая то херня с картинкой*/
  .block3__instruction__img4 {
-   background-image: url('img/resumePhoto.svg');
+   background-image: url('../img/resumePhoto.svg');
    background-repeat: no-repeat;
    background-size: 150px 190px;
    background-position: 50% 50%;
  }
  
  .block3__instruction__img5 {
-   background-image: url('img/handsPhoto.svg');
+   background-image: url('../img/handsPhoto.svg');
    background-repeat: no-repeat;
    background-size: 149.44px 102.89px;
    background-position: 50% 50%;
@@ -474,7 +476,7 @@ body  {
    height: 28.464px;
    width: 11.584px;
    margin: 0 auto;
-   background-image: url('img/forlist.svg');
+   background-image: url('../img/forlist.svg');
    background-repeat: no-repeat;
  }
  
@@ -621,7 +623,7 @@ body  {
  .block__result__date_img {
    width: 28px;
    height: 28px;
-   background-image: url('img/date.svg');
+   background-image: url('../img/date.svg');
    background-repeat: no-repeat;
    position: absolute;
    left: 0px;
@@ -636,7 +638,7 @@ body  {
  .block__result__link_img {
    width: 24px;
    height: 24px;
-   background-image: url('img/linkimg.svg');
+   background-image: url('../img/linkimg.svg');
    background-repeat: no-repeat;
    position: absolute;
    left: 0px;
@@ -739,18 +741,18 @@ body  {
  }
  
  .aFoot_fb {
-   background-image: url('img/fb.svg');
+   background-image: url('../img/fb.svg');
    background-repeat: no-repeat:
  }
  
  .aFoot_tw {
-   background-image: url('img/tw.svg');
+   background-image: url('../img/tw.svg');
    background-repeat: no-repeat;
    margin: 0 16.28px 0;
  }
  
  .aFoot_yt {
-   background-image: url('img/YT.svg');
+   background-image: url('../img/YT.svg');
    background-repeat: no-repeat;
    margin-right: 52.53px;
  }
@@ -786,7 +788,7 @@ body  {
  .aFoot>div {
    height: 61.41px;
    width: 126.68px;
-   background-image: url('img/footerLogo.svg');
+   background-image: url('../img/footerLogo.svg');
    background-repeat: no-repeat;
    margin: 15.65px auto 0;
  }

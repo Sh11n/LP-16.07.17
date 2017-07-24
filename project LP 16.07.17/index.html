@@ -11,14 +11,15 @@
 <!--распознование ширины экрана-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--кысс для телефонов 320пикс-->
-    <link media="screen and (min-width:320px) and (max-width:499px)" rel="stylesheet" type="text/css" href="styleMobile.css">
+    <link media="screen and (min-width:320px) and (max-width:499px)" rel="stylesheet" type="text/css" href="css/styleMobile.css">
 <!--ксс для экранов от 500 до 1023px-->    
-    <link media="screen and (min-width:500px) and (max-width:1023px)" rel="stylesheet" type="text/css" href="styleTablet.css">
+    <link media="screen and (min-width:500px) and (max-width:1023px)" rel="stylesheet" type="text/css" href="css/styleTablet.css">
 <!--ксс для экранов от 1024 до 1262-->
-    <link media="screen and (min-width:1024px) and (max-width:1262px)" rel="stylesheet" type="text/css" href="styleLapTop.css">
+    <link media="screen and (min-width:1024px) and (max-width:1262px)" rel="stylesheet" type="text/css" href="css/styleLapTop.css">
 <!--кысс для мониторов в 1024-->    
-    <link media="screen and (min-width: 1263px)" type="text/css" rel="stylesheet" href="style.css">    
+    <link media="screen and (min-width: 1263px)" type="text/css" rel="stylesheet" href="css/style.css">
     <title>Siftlynow</title>
+    <script href="js/script.js" type="text/js"></script>
   </head>
   <body>
     <header class="mainheader">
@@ -27,8 +28,7 @@
         <div class="navigation__menuImage">
           <a href=""></a>
           <div class="test">
-          <input formmethod="GET" formaction="http://demos.wonderkidstudio.com/sites/crud/api/index.php?/api
-  " class="navigation__submit navigation__submit_style1 button_white" type="submit" value="FIND A GIG">
+          <input id="FindAGig" class="navigation__submit navigation__submit_style1 button_white" type="button" value="FIND A GIG">
           <input class="navigation__submit navigation__submit_style2 button_white" type="submit" value="POST A GIG">
           <input class="navigation__submit navigation__submit_style3" type="submit" value="HOW IT WORKS">
           <input class="navigation__submit navigation__submit_style4" type="submit" value="INVITE">
@@ -54,7 +54,7 @@
           <div class="block1__imgMail block1__imgMail_transform"></div>
         </div>
         <div class="block1__imgCloud"></div>
-        <div class="block1__imgDeskNRope"></div>
+        <div class="block1__imgDeskNRope" id="outPutBlock"></div>
       </div>  
     </section>
     <section class="block2">
