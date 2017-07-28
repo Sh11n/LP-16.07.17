@@ -44,6 +44,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 1em;
 }
 
 html,
@@ -257,7 +260,7 @@ body  {
 }
 
 .block1__imgDeskNRope {
-  width: 80%;
+  width: 66%;
   height: 25%;
   background-image: url('../img/deskAndRope.svg');
   background-repeat: no-repeat;

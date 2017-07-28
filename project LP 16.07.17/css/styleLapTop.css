@@ -44,6 +44,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 1em;
 }
 
 html,
@@ -134,7 +137,7 @@ body  {
 
 .navigation__submit_style2 {
   width: 171px;
-  margin-left: 5%;
+  margin-left: 3%;
 }
 
 .navigation__submit_style3,
@@ -148,7 +151,7 @@ body  {
   border: none;
   border-radius: 19.22px;
   background-color: #1489CA;
-  margin-left: 5%;
+  margin-left: 3%;
 }
 
 
@@ -171,7 +174,6 @@ body  {
   text-align: left;
 }
 
-/*trabl s shriftami!!!!*/
 .block1__contentLeft>h1 {
   font-family: 'Klavika Bold Bold';
   font-weight: bold;
@@ -266,7 +268,7 @@ body  {
 }
 
 .block1__imgDeskNRope {
-  width: 80%;
+  width: 66%;
   height: 25%;
   background-image: url('../img/deskAndRope.svg');
   background-repeat: no-repeat;
